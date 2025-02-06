@@ -10,5 +10,5 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',  // Output file names will be based on entry point (index.bundle.js, page2.bundle.js)
   },
-  mode: 'development',  // or 'production' for optimized build
+  mode: 'production',  // or 'production' for optimized build
 };
