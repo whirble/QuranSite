@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Noble Quran Recitation</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body class="bg-gradient-to-b from-olive to-darkblack">
+    <div class="flex flex-col pt-14 h-fit items-center w-screen relative">
+        <!-- HEADER SECTION -->
+        <header class="fixed z-20 fixed top-0 left-0">
+            <nav id="header" class="h-14 w-screen flex items-center justify-between py-4 px-16 z-10">
+                <div class="title flex flex-col items-start justify-center">
+                    <a href="../" class="title cursor-pointer tracking-tighter p-2 text-[#f0f0f0] text-2xl font-reemKufi">
+                        القرآن الكريم
+                    </a>
+                </div>
+                <div class="links flex inline-block gap-4 text-[#c2c2c2] text-lg font-semibold">
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-regular fa-user"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-gear"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-question"></i></span>
+                </div>
+            </nav>
+        </header>
+        <!-- MAIN SECTION -->
+        <div class="flex w-screen h-fit flex items-start justify-start">
+            <div class="surah w-[60%] flex flex-col items-start justify-start py-8 px-16 gap-4">
+                <div class="container w-full h-fit flex-col items-center justify-end rounded-lg shadow-[0px_0px_110px_1px_rgba(255,255,255,0.5)]">
+                    <div class="text_container w-full max-h-[350px] overflow-y-scroll scrollbar-thin p-6 my-2 flex flex-col items-center justify-start gap-4 text-white text-center">
+                        <p id="ayahText" class="text-5xl font-Lateef"></p>
+                        <p id="ayahTextEn" class="text-md font-semilight text-[#f0f0f0]"></p>
+                        <div id="ayahDetails" class="w-full text-xs text-black font-bold flex items-center justify-end gap-2" dir="rtl"></div>
+                    </div>
+                    <!-- Audio Element -->
+                    <div class="audio_container rounded-lg rounded-t-none bg-[#f0f0f0] h-fit flex items-center justify-start w-full">
+                        <audio id="audioPlayer" src="" controls class="w-full"></audio>
+                    </div>
+                </div>
+                <div class="desc flex flex-col items-start justify-start gap-2 w-full" dir="rtl">
+                    <div id="surahName" class="flex gap-2 items-start justify-start text-white font-semibold text-xl"></div>
+                    <div id="desc" class="flex gap-2 items-start justify-start font-semibold text-sm text-[#222222]"></div>
+                </div>
+                <div id="tafasir_container" class="flex flex-col items-start justify-start gap-4 w-full text-white rounded-lg p-4 bg-[#ffffff1a]" dir="rtl">
+                    <div class="title text-lg font-semibold w-full pb-2 pl-2 flex items-center justify-between"><span id="tafsir_title"></span><span id="toggleButton" class="flex items-center justify-center rounded-full w-10 h-10 hover:bg-[#ffffff1b] cursor-pointer"><i class="fa-solid fa-angle-down"></i></span></div>
+                    <div id="tafsir_Content" class="tafssir text-md font-semibold w-full hidden"></div>
+                </div>
+            </div>
+            <div class="sidebar w-[25%] p-2 pb-12 text-white flex flex-col gap-4 items-start justify-start">
+                <!-- BROWSE AYAHS -->
+                <h1 class="text-xl font-semibold p-2 border-b-[.2px] border-[#343a40] w-full">Browse The Ayahs</h1>
+                <div id="Ayahs_container" class="w-full h-fit max-h-[50vh] overflow-y-scroll overflow-x-hidden scrollbar-thin flex flex-col items-start justify-start gap-2 pr-1"></div>
+                <!-- RECENT READS -->
+                <h1 class="text-xl font-semibold p-2 border-b-[.2px] border-[#343a40] w-full">Recent Reads</h1>
+                <div id="recent_reads" class="w-full h-fit max-h-[50vh] overflow-y-scroll overflow-x-hidden scrollbar-thin flex flex-col items-start justify-start gap-2 pr-1"></div>
+            </div>
+        </div> 
+    </div>
+    <script src="../dist/main_2.bundle.js"></script>
+</body>
+</html>

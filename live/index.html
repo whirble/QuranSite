@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Noble Quran Recitation</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <div class="flex flex-col pt-14 bg-gradient-to-b from-olive to-darkblack h-fit items-center w-screen relative">
+        <!-- HEADER SECTION -->
+        <header class="fixed top-0 left-0 z-1">
+            <nav class="h-14 w-screen bg-[#343a40] flex items-center justify-between py-4 px-16 text-xl font-semibold z-10">
+                <div class="title flex inline-block gap-4">
+                    <p class="flex title tracking-tighter uppercase cursor-pointer text-white">The Noble Quran</p>
+                    <p class="flex title tracking-tighter uppercase cursor-pointer text-white font-reemKufi font-light">القرآن الكريم</p>
+                </div>
+                <div class="links flex inline-block gap-6 text-[#c2c2c2]">
+                    <span class="cursor-pointer"><i class="fa-regular fa-user hover:text-white"></i></span>
+                    <span class="cursor-pointer"><i class="fa-solid fa-gear hover:text-white"></i></span>
+                    <span class="cursor-pointer"><i class="fa-regular fa-circle-question hover:text-white"></i></span>
+                    <span class="cursor-pointer"><i class="fa-solid fa-hand-holding-dollar hover:text-white"></i></span>
+                </div>
+            </nav>
+        </header>
+        <!-- HERO SECTION -->
+        <div class="flex w-screen h-screen flex items-start justify-start">
+            <div class="live_video w-[74%] h-full flex flex-col items-start justify-start p-8 gap-4">
+                <div class="container w-full h-[75%] flex items-center justify-center rounded-lg shadow-[0px_0px_110px_1px_rgba(255,255,255,0.5)]">
+                    
+                    <iframe 
+                    class="rounded-lg w-full h-full"
+                    width="853" 
+                    height="480" 
+                    src="https://www.youtube.com/embed/w28IE3mUL1U" 
+                    title="بث مباشر | قناة السنة النبوية" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                    </iframe>
+
+                </div>
+                <div class="desc flex flex-col items-start justify-start gap-2">
+                    <div class="flex gap-2 items-center justify-start text-white font-semibold text-xl">
+                        <div class="">Live broadcast | Sunnah Channel</div>
+                        <div class="">بث مباشر | قناة السنة النبوية</div>
+                    </div>
+                    <div class="flex text-white font-light text-md">
+                        <p>قناة تلفزيونية تابعة لهيئة الإذاعة والتلفزيون بالمملكة العربية السعودية تبث من المدينة المنورة بث حي مباشر 24 ساعة للمسجد النبوي الشريف جميع الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="live_sidebar w-[25%] bg-[] h-full p-2 text-white flex flex-col gap-4 items-start justify-start">
+                <h1 class="text-xl font-semibold p-2 border-b-[.2px] border-[#343a40] w-full">Live Broadcast</h1>
+                <div class="w-full flex flex-col items-start justify-start">
+                    <div class="flex p-2 w-full items-start justify-start cursor-pointer hover:underline gap-2 rounded">
+                        <span class="w-40 h-20 bg-white rounded-lg"><img class="w-full rounded-lg object-contain" src="https://cdn.shopify.com/s/files/1/2320/1537/files/Screen_Shot_2017-09-11_at_12.06.32_PM_large.png?v=1505102816" alt=""></span>
+                        <span class="flex gap-1 flex-col items-start justify-start">
+                            <span class="text-sm font-light ">قناة القرآن الكريم</span>
+                            <span class="text-sm font-light "> Quran channel</span>
+                            <span class="text-xs font-semibold">Live stream</span>
+                        </span>
+                    </div>
+                    <div class="flex p-2 w-full items-start justify-start cursor-pointer hover:underline gap-2 rounded">
+                        <span class="w-40 h-20 bg-white rounded-lg"><img class="w-full h-full rounded-lg" src="https://pbs.twimg.com/profile_banners/866253112046219264/1602694801" alt=""></span>
+                        <span class="flex gap-1 flex-col items-start justify-start">
+                            <span class="text-sm font-light ">قناة السنة النبوية</span>
+                            <span class="text-sm font-light ">Sunnah channel</span>
+                            <span class="text-xs font-semibold">Live stream</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="../src/live.js"></script>
+</body>
+</html>
