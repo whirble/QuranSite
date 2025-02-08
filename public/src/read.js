@@ -2,7 +2,7 @@
 import { db, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, query, where, orderBy } from './db.js';
 
 // API PARAMETERS
-const apiUrl = 'http://api.alquran.cloud/v1/surah';
+const apiUrl = 'https://api.alquran.cloud/v1/surah';
 const surahNumber = localStorage.getItem("surahNumber");
 const reciter = 'ar.alafasy';
 const translator = 'en.asad';
