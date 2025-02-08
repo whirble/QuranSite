@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Noble Quran Recitation</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="flex flex-col bg-gradient-to-b from-olive to-darkblack h-fit items-center gap-4 w-screen">
+        <!-- HEADER SECTION -->
+        <header class="fixed z-20 fixed top-0 left-0">
+            <nav id="header" class="h-14 w-screen flex items-center justify-between py-4 px-16 z-10">
+                <div class="title flex flex-col items-start justify-center">
+                    <a href="../" class="title cursor-pointer tracking-tighter p-2 text-[#f0f0f0] text-2xl font-reemKufi">
+                        القرآن الكريم
+                    </a>
+                </div>
+                <div class="links flex inline-block gap-4 text-[#c2c2c2] text-lg font-semibold">
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-regular fa-user"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-gear"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                    <span class="cursor-pointer bg-[#ffffff1a] hover:text-white hover:bg-[#415a77] rounded-full h-10 w-10 flex items-center justify-center"><i class="fa-solid fa-question"></i></span>
+                </div>
+            </nav>
+        </header>
+        <!-- HERO SECTION -->
+        <div class="hero flex items-center justify-center flex-col text-center w-screen p-24 gap-4">
+            <h1 class="text-5xl font-bold text-white [text-shadow:0px_0px_10px_rgba(255,255,255,0.8),0px_0px_100px_rgba(255,255,255,0.6),0px_0px_100px_rgba(255,255,255,0.4)]">
+                Immerse in the Divine Words
+            </h1>
+            <p class="font-light text-white">
+                Access live broadcasts, daily Ayahs, and personalized playlists.
+            </p>
+            <div class="form_container flex w-full items-center justify-center">
+                <form action="" class="flex w-full items-center justify-center">
+                    <input 
+                    type="text" 
+                    placeholder="What do you want to read?" 
+                    class="flex py-4 px-4 rounded-full border border-gray-300 placeholder-gray-500 w-1/2">
+                </form>
+            </div>
+            <div class="cta pt-6 flex inline-block gap-2 items-center justify-center">
+                <button class="bg-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#f0f0f0] flex gap-2"><span><i class="fa-solid fa-play"></i></span>Listen Now</button>
+                <button class="bg-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-[#f0f0f0] flex gap-2"><span><i class="fa-solid fa-circle text-xs text-red-800"></i></span>Live Broadcast</button>
+            </div>
+        </div> 
+        <!-- RECENT ACTIVITY SECTION -->
+        <div class="recent_activity_container w-screen px-28  text-white">
+            <div class="recent_activity_container_titles flex items-center justify-start gap-4 w-full font-semibold border-b-[.2px] border-[#343a40]">
+                <h1 class="border-b-[2px] p-2">Recently Read</h1>
+                <h1 class="border-b-[2px] p-2 border-transparent">Bookmarks</h1>
+            </div>
+            <div class="recent_activity_container_main flex items-start justify-start gap-2 py-6 font-light">
+                <p>No recent activity yet.</p>
+            </div>
+        </div>
+        <!-- SUAR SECTION -->
+        <div class="suar_container w-screen px-28 text-white">
+            <div class="suar_container_titles flex items-center justify-start gap-4 w-full font-semibold border-b-[.2px] border-[#343a40]">
+                <h1 class="border-b-[2px] p-2">Suar</h1>
+                <h1 class="border-b-[2px] p-2 border-transparent">Juz</h1>
+                <h1 class="border-b-[2px] p-2 border-transparent">Revelation Order</h1>
+            </div>
+            <div class="suar_container_main flex flex-wrap gap-2 py-6 w-full items-start justify-center" id="suar_container">
+
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="w-screen px-28 py-6 text-white flex flex-col items-start justify-center gap-6">
+            <div class="flex inline-block gap-4 items-start justify-start">
+                <div class="col pr-24 flex flex-col items-start justify-start gap-4 max-w-[40%]">
+                    <div class="col_title flex flex-col items-start justify-start gap-2">
+                        <span class="text-2xl font-semibold tracking-tighter">THE NOBLE QURAN</span>
+                        <span class="text-xl font-semibold">Read, study, and learn The Noble Quran.</span>
+                    </div>
+                    <div class="col_text text-md font-semibold text-slate-400 p-4 bg-[#343a40] rounded">This website serves as a continuous charity. Our aim is to make it simple for all to read, understand, and study the Noble Quran. The Noble Quran is also known by many names, including Al-Quran Al-Kareem, Al-Kitab, Al-Furqan, Al-Maw'itha, Al-Dhikr, and Al-Noor.</div>
+                </div>
+                <div class="col pr-24 flex flex-col items-start justify-start gap-4">
+                    <div class="col_title text-xl font-semibold">Navigate</div>
+                    <div class="col_text flex flex-col items-start justify-start text-md font-semilight text-gray-400">
+                        <a href="#" class="hover:underline">Home</a>
+                        <a href="#" class="hover:underline">Reciters</a>
+                        <a href="#" class="hover:underline">About Us</a>
+                        <a href="#" class="hover:underline">Donate</a>
+                        <a href="#" class="hover:underline">Mobile Apps</a>
+                        <a href="#" class="hover:underline">Developers</a>
+                        <a href="#" class="hover:underline">Feedback</a>
+                        <a href="#" class="hover:underline">Help</a>
+                    </div>
+                </div>
+                <div class="col pr-24 flex flex-col items-start justify-start gap-4">
+                    <div class="col_title text-xl font-semibold">Network</div>
+                    <div class="col_text flex flex-col items-start justify-start text-md font-semilight text-gray-400">
+                        <a href="#" class="hover:underline">QuranicAudio.com</a>
+                        <a href="#" class="hover:underline">Salah.com</a>
+                        <a href="#" class="hover:underline">Sunnah.com</a>
+                        <a href="#" class="hover:underline">Previous.Quran.com</a>
+                        <a href="#" class="hover:underline">Corpus.Quran.com</a>
+                        <a href="#" class="hover:underline">QuranReflect.com</a>
+                        <a href="#" class="hover:underline">Tarteel.ai</a>
+                    </div>
+                </div>
+                <div class="col flex flex-col items-start justify-start gap-4">
+                    <div class="col_title text-xl font-semibold">Popular Links</div>
+                    <div class="col_text flex flex-col items-start justify-start text-md font-semilight text-gray-400">
+                        <a href="#" class="hover:underline">Ayatul Kursi</a>
+                        <a href="#" class="hover:underline">Al Muzzammil</a>
+                        <a href="#" class="hover:underline">Al Kahf</a>
+                        <a href="#" class="hover:underline">Al Waqi'ah</a>
+                        <a href="#" class="hover:underline">Ar-Rahman</a>
+                        <a href="#" class="hover:underline">Al Mulk</a>
+                        <a href="#" class="hover:underline">Yaseen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-xs font-semibold text-slate-200">
+                <p>© 2024 <span class="tracking-tighter underline">THE NOBLE QURAN</span>. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>     
+    <script src="main_1.bundle.js"></script>
+</body>
+</html>

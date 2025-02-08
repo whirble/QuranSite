@@ -72,7 +72,7 @@ suar_container.addEventListener("click", (event) => {
     if (surahItem) {
         const surahNumber = surahItem.getAttribute("data-value"); // The variable you want to pass
         localStorage.setItem("surahNumber", surahNumber); // Store it in localStorage
-        window.location.href = "./read"; // Redirect to another page
+        window.location.href = "../read"; // Redirect to another page
     }
 });
 
