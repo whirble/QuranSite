@@ -1,5 +1,5 @@
 // QURAN MP3
-const apiUrl = 'http://api.alquran.cloud/v1/';
+const apiUrl = 'https://api.alquran.cloud/v1/';
 // ELEMENTS
 const suar_container = document.querySelector('#suar_container')
 // DEEPL API TRANSLATE
